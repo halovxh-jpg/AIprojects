@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["unzip", "nodejs"]
+
+[phases.build]
+cmds = ["unzip -o frequency-ai-web-app.zip"]
+
+[start]
+cmd = "node ai-web-app/server.js"
